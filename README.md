@@ -7,6 +7,7 @@ This Python program uses the Pokémon API to get information and images of any P
 1. **Query the Pokémon API from the Terminal**: 
    - Prompts the user to enter the name of a Pokémon from the terminal.
    - It requests the Pokémon API to get the data of the specified Pokémon.
+![image](https://github.com/Deathbeat1/Pokedex_Ascii_magic/assets/92342132/d32cecb9-187b-46b2-aeb3-ec98d7103196)
 
 2. **Conversion to ASCII Art**: 
    - Gets the image of the Pokémon from the API.
