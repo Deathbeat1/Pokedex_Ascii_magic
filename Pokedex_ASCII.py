@@ -28,7 +28,7 @@ if data:
     print("Pokemon Data:")
     print("Name:", data["name"].capitalize())
     print("ID:", data["id"])
-    print("Height:", data["height"] * 0.1, "metros")
+    print("Height:", data["height"] * 0.1, "mGEe")
     print("Weight:", data["weight"] * 0.1 , "Kg")
     print('Type:', ', '.join([t['type']['name'].capitalize() for t in data['types']]), '\n')
     
