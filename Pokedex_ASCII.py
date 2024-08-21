@@ -18,23 +18,17 @@ def get_pokemon(pokemon):
 data = get_pokemon(pokemon)
 
 # Print pokemon data
-if data:
-    # Gets the pokemon image and converts it to ASCII.
-    image_url = data["sprites"]["front_default"]
-    poke_art = AsciiArt.from_url(image_url).to_ascii(columns=60, width_ratio=2.5)    
-    print(poke_art + '\n')
-
-    # Print pokemon data
-    print("Pokemon Data:")
+while data:
     print("Name:", data["name"].capitalize())
-    print("ID:", data["id"])
-    print("Height:", data["height"] * 0.1, "mGEe")
-    print("Weight:", data["weight"] * 0.1 , "Kg")
-    print('Type:', ', '.join([t['type']['name'].capitalize() for t in data['types']]), '\n')
+    print("Height:", data["height"])
+    print("Weight:", data["weight"])
+    print("Abilities:")
+    for ability in data["abilities"]:
+        print(ability["ability"]["name"])
+    print("Types:")
+    for types in data["types"]:
+        print(types["type"]["name"])
     
-else:
-    print("Pokemon not found")
-
 
 
 
